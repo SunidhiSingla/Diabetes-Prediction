@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 
 <html lang="en" dir="ltr">
     <head>
@@ -22,15 +22,15 @@
 
         <!-- Text Area -->
     	<div class="ml-container">
-    		<form action="{{ url_for('predict') }}" method="POST">
-                <input class="form-input" type="text" name="pregnancies" placeholder="Number of Pregnancies eg. 0"><br>
-                <input class="form-input" type="text" name="glucose" placeholder="Glucose (mg/dL) eg. 80"><br>
-                <input class="form-input" type="text" name="bloodpressure" placeholder="Blood Pressure (mmHg) eg. 80"><br>
-                <input class="form-input" type="text" name="skinthickness" placeholder="Skin Thickness (mm) eg. 20"><br>
-                <input class="form-input" type="text" name="insulin" placeholder="Insulin Level (IU/mL) eg. 80"><br>
-                <input class="form-input" type="text" name="bmi" placeholder="Body Mass Index (kg/m²) eg. 23.1"><br>
-                <input class="form-input" type="text" name="dpf" placeholder="Diabetes Pedigree Function eg. 0.52"><br>
-                <input class="form-input" type="text" name="age" placeholder="Age (years) eg. 34"><br>
+    		<form action="{{ url_for('predict') }}" method="POST" autocomplete="off">
+                <input class="form-input" type="text" name="pregnancies" required placeholder="Number of Pregnancies eg. 0"><br>
+                <input class="form-input" type="text" name="glucose" required placeholder="Glucose (mg/dL) eg. 80"><br>
+                <input class="form-input" type="text" name="bloodpressure" required placeholder="Blood Pressure (mmHg) eg. 80"><br>
+                <input class="form-input" type="text" name="skinthickness" required placeholder="Skin Thickness (mm) eg. 20"><br>
+                <input class="form-input" type="text" name="insulin" required placeholder="Insulin Level (IU/mL) eg. 80"><br>
+                <input class="form-input" type="text" name="bmi" required placeholder="Body Mass Index (kg/m²) eg. 23.1"><br>
+                <input class="form-input" type="text" name="dpf" required placeholder="Diabetes Pedigree Function eg. 0.52"><br>
+                <input class="form-input" type="text" name="age" required placeholder="Age (years) eg. 34"><br>
 
         		<input type="submit" class="my-cta-button" value="Predict">
         	</form>
@@ -38,10 +38,6 @@
 
         <!-- Footer -->
        <div class='footer'>
-           <div class="contact">
-               <a target="_blank" href="https://github.com/anujvyas/Diabetes-Prediction-Deployment"><i class="fab fa-github fa-lg contact-icon"></i></a>
-               <a target="_blank" href="https://www.linkedin.com/in/anujkvyas"><i class="fab fa-linkedin fa-lg contact-icon"></i></a>
-           </div>
            <p class='footer-description'>Made by Sunidhi Singla(101983052)</p>
        </div>
 
