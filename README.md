@@ -8,4 +8,4 @@ Deployed at:https://diabetes-prediction-sunidhi.herokuapp.com/
 
 • A glimpse of the web app:
 
-![GIF](snapshots)
+![GIF](snapshots/capture1)
